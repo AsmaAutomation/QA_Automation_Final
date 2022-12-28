@@ -3,38 +3,15 @@
     "line": 2,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 3951485200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Setup.setup()"
-            }
-          }
-        ],
         "line": 5,
-        "name": "Authentification - OrangeHRM",
+        "name": "",
         "description": "",
-        "id": "authentification---orangehrm;authentification---orangehrm",
-        "after": [
-          {
-            "result": {
-              "duration": 2937272400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Setup.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 12723396800,
+              "duration": 10860856900,
               "status": "passed"
             },
             "line": 6,
@@ -46,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 215804000,
+              "duration": 882419000,
               "status": "passed"
             },
             "line": 7,
@@ -64,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 305679600,
+              "duration": 424762700,
               "status": "passed"
             },
             "line": 8,
@@ -82,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 4113516500,
+              "duration": 122749900,
               "status": "passed"
             },
             "line": 9,
@@ -94,15 +71,15 @@
           },
           {
             "result": {
-              "duration": 64102100,
+              "duration": 1633884901,
               "status": "passed"
             },
             "line": 10,
-            "name": "Je me redirige vers le compte admin \"Paul Collings\"",
+            "name": "Je me redirige vers le compte admin \"Dashboard\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Paul Collings",
+                  "val": "Dashboard",
                   "offset": 37
                 }
               ],
@@ -111,17 +88,404 @@
             "keyword": "Then "
           }
         ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3631270599,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.setup()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Search user",
+        "description": "",
+        "id": "title-of-your-feature;search-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1988508900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7026507100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I navigate to Admin interface",
+            "match": {
+              "location": "SearchUserStepsDefinition.iNavigateToAdminInterface()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3298774699,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I write the username to search \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 32
+                }
+              ],
+              "location": "SearchUserStepsDefinition.iWriteTheUsernameToSearchAdmin(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 351145301,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I select the user role \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 24
+                }
+              ],
+              "location": "SearchUserStepsDefinition.iSelectTheUserRoleAdmin(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 313596900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I select the user status \"Enabled\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Enabled",
+                  "offset": 26
+                }
+              ],
+              "location": "SearchUserStepsDefinition.iSelectTheUserStatusEnabled(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112267300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on search button",
+            "match": {
+              "location": "SearchUserStepsDefinition.iClickOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 638902300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I find the user \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 17
+                }
+              ],
+              "location": "SearchUserStepsDefinition.iFindTheUserAdmin(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@tag"
+          },
+          {
+            "line": 12,
+            "name": "@searchUser"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24515689800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Je me connecte à l application orangeHTML",
+            "match": {
+              "location": "AuthenticationStepsDefinition.jeMeConnecteÀLApplicationOrangeHTML()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 896243000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Je saisie Username \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 20
+                }
+              ],
+              "location": "AuthenticationStepsDefinition.jeSaisieUsername(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 331773501,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Je saisie Password \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin123",
+                  "offset": 20
+                }
+              ],
+              "location": "AuthenticationStepsDefinition.jeSaisiePassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176705900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Je clique sur le bouton login",
+            "match": {
+              "location": "AuthenticationStepsDefinition.jeCliqueSurLeBoutonLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1942703499,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Je me redirige vers le compte admin \"Dashboard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dashboard",
+                  "offset": 37
+                }
+              ],
+              "location": "AuthenticationStepsDefinition.jeMeRedirigeVersLeCompteAdmin(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2473153700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Search user",
+        "description": "",
+        "id": "title-of-your-feature;search-user;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1652894000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6916011100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I navigate to Admin interface",
+            "match": {
+              "location": "SearchUserStepsDefinition.iNavigateToAdminInterface()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3297205100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I write the username to search \"Jordan.Mathews\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jordan.Mathews",
+                  "offset": 32
+                }
+              ],
+              "location": "SearchUserStepsDefinition.iWriteTheUsernameToSearchAdmin(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 407131300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I select the user role \"ESS\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ESS",
+                  "offset": 24
+                }
+              ],
+              "location": "SearchUserStepsDefinition.iSelectTheUserRoleAdmin(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 315008300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I select the user status \"Enabled\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Enabled",
+                  "offset": 26
+                }
+              ],
+              "location": "SearchUserStepsDefinition.iSelectTheUserStatusEnabled(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105255100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on search button",
+            "match": {
+              "location": "SearchUserStepsDefinition.iClickOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 314875201,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I find the user \"Jordan.Mathews\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jordan.Mathews",
+                  "offset": 17
+                }
+              ],
+              "location": "SearchUserStepsDefinition.iFindTheUserAdmin(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@tag"
+          },
+          {
+            "line": 12,
+            "name": "@searchUser"
+          }
+        ]
       }
     ],
-    "name": "Authentification - OrangeHRM",
-    "description": "En tant que utilisateur je souhaite m\u0027authentifier",
-    "id": "authentification---orangehrm",
+    "name": "Title of your feature",
+    "description": "I want to use this template for my feature file",
+    "id": "title-of-your-feature",
     "keyword": "Feature",
-    "uri": "authentication/Authentication.feature",
+    "uri": "userManagement/UserSearch.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@connexion"
+        "name": "@tag"
       }
     ]
   }

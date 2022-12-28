@@ -7,4 +7,4 @@ Feature: Authentification - OrangeHRM
     When Je saisie Username "Admin"
     And Je saisie Password "admin123"
     And Je clique sur le bouton login
-    Then Je me redirige vers le compte admin "Paul Collings"
+    Then Je me redirige vers le compte admin "Dashboard"

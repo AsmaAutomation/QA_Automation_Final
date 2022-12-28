@@ -1,5 +1,7 @@
 package com.orangeHRM.e2eTests.stepsDefinition;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -28,7 +30,7 @@ public class AuthenticationStepsDefinition {
 	@Given("^Je me connecte à l application orangeHTML$")
 	public void jeMeConnecteÀLApplicationOrangeHTML() throws Throwable {
 		commonMethods.openURLWithConfigFile("url");
-		Thread.sleep(4000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
 	@When("^Je saisie Username \"([^\"]*)\"$")
@@ -44,12 +46,12 @@ public class AuthenticationStepsDefinition {
 	@When("^Je clique sur le bouton login$")
 	public void jeCliqueSurLeBoutonLogin() throws Throwable {
 		authenticationPage.login();
-		Thread.sleep(4000);
 	}
 
 	@Then("^Je me redirige vers le compte admin \"([^\"]*)\"$")
 	public void jeMeRedirigeVersLeCompteAdmin(String message) throws Throwable {
 		String textMsg = AuthenticationPage.userConnected.getText();
+		System.out.println("**********************************"+textMsg);
 		Assert.assertTrue(textMsg.contains(message));
 	}
 

@@ -11,7 +11,7 @@ public class AuthenticationPage {
 	final static String USERNAME_XPATH = "//input[@name='username']";
 	final static String PASSWORD_XPATH = "//input[@name='password']";
 	final static String LOGIN_BTN_XPATH = "//button[@type='submit']";
-	final static String ADMIN_USER_XPATH = "//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span/p";
+	final static String ADMIN_USER_XPATH = "//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[1]/span/h6";
 	
 	/*	WebElements	*/
 	@FindBy(how = How.XPATH, using = USERNAME_XPATH)
